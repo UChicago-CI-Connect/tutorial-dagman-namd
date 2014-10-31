@@ -1,0 +1,16 @@
+Universe = vanilla
+Executable = namd_run_dag1.sh
+transfer_input_files = ubq_gbis_eq_dag1.conf, ubq.pdb, ubq.psf, par_all27_prot_lipid.inp, OutFilesFromNAMD_dag0.tar.gz
+should_transfer_files=Yes
+when_to_transfer_output = ON_EXIT
+output        = OutFilesFromNAMD_dag1.tar.gz
+error         = job.error.dag1
+log           = job.log.dag1
+#request_cpus = 2
+#request_memory = 1000
+#+RequiresWholeMachine = True
+#Requirements = (Target.CAN_RUN_WHOLE_MACHINE =?= True)
+requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
++ProjectName="uchicago"
+Queue 1
+
