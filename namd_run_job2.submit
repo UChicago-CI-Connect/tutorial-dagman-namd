@@ -1,0 +1,11 @@
+Universe = vanilla
+Executable = namd_run_job2.sh
+transfer_input_files = ubq_gbis_eq_job2.conf, ubq.pdb, ubq.psf, par_all27_prot_lipid.inp, OutFilesFromNAMD_job1.tar.gz
+should_transfer_files=Yes
+when_to_transfer_output = ON_EXIT
+output        = OutFilesFromNAMD_job2.tar.gz
+error         = job.error.job2
+log           = job.log.job2
++ProjectName="uchicago"
+Queue 1
+
