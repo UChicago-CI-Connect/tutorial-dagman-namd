@@ -6,6 +6,5 @@ when_to_transfer_output = ON_EXIT
 output        = OutFilesFromNAMD_job3.tar.gz
 error         = job.error.job3
 log           = job.log.job3
-+ProjectName="uchicago"
 Queue 1
 
