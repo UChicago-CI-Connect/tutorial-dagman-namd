@@ -1,0 +1,2 @@
+rm: cannot remove `OutFilesFromNAMD_job2': Is a directory
+cp: omitting directory `OutFilesFromNAMD_job3'
